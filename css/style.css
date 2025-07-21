@@ -17,6 +17,6 @@ h1 {
 
 .pin {
   position: absolute;
-  top: -20px;
+  top: -15px;
   left: calc(50% - 20px);
 }
