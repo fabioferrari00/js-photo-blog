@@ -8,17 +8,19 @@ for (let i = 0; i < 6; i++) {
   //effettuo la chiamata ajax
   axios.get(`https://lanciweb.github.io/demo/api/pictures/`).then((resp) => {
 
+
     cards.push(resp.data[i]);
+    let card = resp.data[i];
 
 
     //inserisco nell'html per ogni iterazione una card
     imagesList.innerHTML += `<div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
         <div class="card" style="width: 18rem;">
-          <img src="${cards[i].url}" class="card-img-top p-3" alt="...">
+          <img src="${card.url}" class="card-img-top p-3" alt="...">
           <img src="./img/pin.svg" alt="" class="pin">
           <div class="card-body">
-            <h3>${cards[i].title}</h3>
-            <p class="card-text">${cards[i].date}</p>
+            <h3>${card.title}</h3>
+            <p class="card-text">${card.date}</p>
           </div>
         </div>
       </div>`;
