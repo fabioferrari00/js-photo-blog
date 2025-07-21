@@ -12,7 +12,7 @@ for (let i = 0; i < 6; i++) {
 
 
     //inserisco nell'html per ogni iterazione una card
-    imagesList.innerHTML += `<div class="col-12 col-md-6 col-lg-4">
+    imagesList.innerHTML += `<div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
         <div class="card" style="width: 18rem;">
           <img src="${cards[i].url}" class="card-img-top p-3" alt="...">
           <img src="./img/pin.svg" alt="" class="pin">
