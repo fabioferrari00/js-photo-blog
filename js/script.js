@@ -1,12 +1,12 @@
 //mi recupero l'elemento del dom nella quale andrò a stampare le images
 const imagesList = document.getElementById('images-list');
 
-//creo un ciclo di 6 iterazioni per generare le cards
-for (let i = 0; i < 6; i++) {
+let objList = `https://lanciweb.github.io/demo/api/pictures/`;
 
-  //effettuo la chiamata ajax
-  axios.get(`https://lanciweb.github.io/demo/api/pictures/`).then((resp) => {
-
+//effettuo la chiamata ajax
+axios.get(objList).then((resp) => {
+  //creo un ciclo di 6 iterazioni per generare le cards
+  for (let i = 0; i < resp.data.length; i++) {
     //inserisco nell'html per ogni iterazione una card
     imagesList.innerHTML += `<div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
         <div class="card" style="width: 18rem;">
@@ -19,5 +19,5 @@ for (let i = 0; i < 6; i++) {
         </div>
       </div>`;
 
-  })
-}
+  }
+})
