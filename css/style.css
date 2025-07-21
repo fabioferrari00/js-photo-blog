@@ -1,0 +1,12 @@
+body {
+  font-family: Edu Tas Beginner, sans-serif;
+  background-image: url('../img/cork.png');
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.header {
+  background-image: url('../img/wall.png');
+}
