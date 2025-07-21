@@ -10,3 +10,13 @@ h1 {
 .header {
   background-image: url('../img/wall.png');
 }
+
+.card {
+  position: relative;
+}
+
+.pin {
+  position: absolute;
+  top: -20px;
+  left: calc(50% - 20px);
+}
