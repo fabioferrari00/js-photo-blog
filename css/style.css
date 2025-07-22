@@ -28,9 +28,6 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: 0.3s;
   flex-direction: column;
 }
@@ -38,5 +35,3 @@ h1 {
 .overlay img {
   height: 500px;
 }
-
-.overlay .btn {}
