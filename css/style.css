@@ -20,3 +20,23 @@ h1 {
   top: -15px;
   left: calc(50% - 20px);
 }
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  flex-direction: column;
+}
+
+.overlay img {
+  height: 500px;
+}
+
+.overlay .btn {}
