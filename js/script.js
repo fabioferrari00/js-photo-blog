@@ -22,17 +22,17 @@ axios.get(objList).then((resp) => {
     </div>
     </div>`;
 
-    //mi recupero tutte le cards che contengono le foto
-    const cards = document.querySelectorAll('.card');
-
-    cards.forEach((elem) => {
-      elem.addEventListener('click', () => {
-        overlay.classList.remove('d-none');
-        overlay.classList.add('d-block');
-        overlay.childNodes[3].src = elem.childNodes[1].src
-      })
-    })
   }
+  //mi recupero tutte le cards che contengono le foto
+  const cards = document.querySelectorAll('.card');
+
+  cards.forEach((elem) => {
+    elem.addEventListener('click', () => {
+      overlay.classList.remove('d-none');
+      overlay.classList.add('d-block');
+      overlay.childNodes[3].src = elem.childNodes[1].src
+    })
+  })
 });
 
 closeButton.addEventListener('click', () => {
